@@ -1,0 +1,26 @@
+// src/components/Header/Header.scss
+@import '../../main.scss';
+
+.header {
+  background-color: $primary-color;
+
+  &__title {
+    flex-grow: 1;
+    font-family: $font-family-heading;
+  }
+
+  &__nav {
+    display: flex;
+    gap: 1rem;
+
+    a {
+      color: $background-color;
+      text-decoration: none;
+
+      &:hover {
+        color: darken($background-color, 10%);
+      }
+    }
+  }
+}
+
