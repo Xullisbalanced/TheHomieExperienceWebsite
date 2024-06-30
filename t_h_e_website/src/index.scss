@@ -1,0 +1,67 @@
+// src/main.scss
+
+// Define font families
+$font-family-base: 'Roboto, sans-serif';
+$font-family-heading: 'Montserrat, sans-serif';
+
+// Define color variables
+$primary-color: #4CAF50; // Green
+$secondary-color: #FF5722; // Orange
+$background-color: #FFFFFF; // White
+$paper-color: #E0F7FA; // Light blue
+$text-color-primary: #212121; // Dark text
+$text-color-secondary: #757575; // Grey text
+
+// Apply global styles
+body {
+  font-family: $font-family-base;
+  background-color: $background-color;
+  color: $text-color-primary;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $font-family-heading;
+}
+
+a {
+  color: $primary-color;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+// Utility classes
+.container {
+  padding: 1rem;
+  background-color: $paper-color;
+}
+
+.btn-primary {
+  background-color: $primary-color;
+  color: $background-color;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: darken($primary-color, 10%);
+  }
+}
+
+.btn-secondary {
+  background-color: $secondary-color;
+  color: $background-color;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: darken($secondary-color, 10%);
+  }
+}
